@@ -1,7 +1,7 @@
 # Finance Calculators
 
 This is a program that allows the user to access two different financial calculators:
-1. an investment calculator
+1. an investment calculator.
 2. a home loan repayment calculator.
 
 ### INTEREST FORMULA
