@@ -41,7 +41,7 @@ def calculate_investment(choice, principle_amt, interest_rate, years) -> str:
     # if user selected 'compound' interest:
     if choice == "compound":
         total_amt = round(principle_amt * math.pow(1 + (interest_rate / 100), years), 2)
-        msg = f"The total amount when compound interest is applied is R {total_amt}"
+        msg = f"The total amount when compound interest is applied is R{total_amt}"
 
     return msg
 
@@ -53,7 +53,7 @@ def select_interest() -> str:
     return input("").lower()
 
 
-def calculate_bond(house_value, interest_rate, months) -> None:
+def calculate_bond(house_value, interest_rate, months) -> str:
     """
     calculates total bond repayment amount
     """
@@ -62,7 +62,7 @@ def calculate_bond(house_value, interest_rate, months) -> None:
         / (1 - (1 + (interest_rate / 12)) ** (-months)),
         2,
     )
-    return f"The monthly bond repayment will be {total_amt}"
+    return f"The monthly bond repayment will be R{total_amt}"
 
 
 def get_investment_info() -> tuple:
