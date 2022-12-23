@@ -48,7 +48,7 @@ def calculate_investment(choice, principle_amt, interest_rate, years) -> str:
 
 def select_interest() -> str:
     """
-    waits for user to select interest choice
+    prompts for user input to select interest choice
     """
     return input("").lower()
 
@@ -66,6 +66,9 @@ def calculate_bond(house_value, interest_rate, months) -> None:
 
 
 def get_investment_info() -> tuple:
+    '''
+    prompts user for input needed for total investment calculation
+    '''
     principle_amt = float(input("How much money will you be depositing: "))
     interest_rate = float(
         input("Please enter the interest rate (Only the number is necessary):")
@@ -77,7 +80,7 @@ def get_investment_info() -> tuple:
 
 def get_bond_info() -> tuple:
     """
-    asks user for inputs needed for the bond repayment calculation
+    prompts user for input needed for bond repayment calculation
     """
     house_value = float(input("What is the present value of the house: "))
     interest_rate = (
